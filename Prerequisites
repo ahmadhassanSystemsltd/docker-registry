@@ -1,0 +1,7 @@
+#create a dir /registry and then clone and execute the setup script in /registry directory
+echo "Creating Registry folder at /registry "
+sudo mkdir -p /registry && cd "$_"
+
+#check the openssl version and upgrade it to the 1.1.1
+sudo openssl version
+echo "If you do not have oppenssl 1.1.1 which is required go to 'https://gist.github.com/Bill-tran/5e2ab062a9028bf693c934146249e68c' to setup"
