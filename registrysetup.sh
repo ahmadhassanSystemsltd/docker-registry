@@ -42,6 +42,7 @@ docker tag nginx:latest docker-registry:5000/mynginx:v1
 docker push docker-registry:5000/mynginx:v1
 
 
+#https://www.knowledgehut.com/blog/devops/private-docker-registry
 
 
 
