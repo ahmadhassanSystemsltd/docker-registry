@@ -31,7 +31,7 @@ echo $REGISTRY_IP
 
 echo -e '$REGISTRY_IP $REGISTRY_NAME' > /etc/hosts
 mkdir -p /etc/docker/certs.d/$REGISTRY_NAME:5000
-scp /registry/certs/tls.crt root@$x:/etc/docker/certs.d/$REGISTRY_NAME:5000/ca.crt
+scp /registry/certs/tls.crt /etc/docker/certs.d/$REGISTRY_NAME:5000/ca.crt
 
 docker login docker-registry:5000 -u myuser -p mypasswd
 echo "updates to make it accessible through any node on the cluster"
